@@ -14,4 +14,8 @@ export class OportunidadeService {
     return this.httpClient.get(this.apiUrl);
   }
 
+  adicionar(oportunidade: any) {
+    return this.httpClient.post(this.apiUrl, oportunidade)
+  }
+
 }
