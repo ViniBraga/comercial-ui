@@ -12,12 +12,12 @@ import { MessageService} from "primeng/api";
 
 
 import { AppComponent } from './app.component';
-import { PainelNegociacaoComponent } from './painel-negociacao/painel-negociacao.component';
+import { PanelNegotiationComponent } from './panel-negotiation/panel-negotiation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PainelNegociacaoComponent
+    PanelNegotiationComponent
   ],
   imports: [
     BrowserModule,
