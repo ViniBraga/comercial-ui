@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OpportunityService {
 
-  apiUrl = 'http://localhost:8080/opportunities';
+  //apiUrl = 'http://localhost:8080/opportunities';
+  apiUrl = 'https://commercial-api.herokuapp.com/opportunities';
 
   constructor(private httpClient: HttpClient) { }
 
