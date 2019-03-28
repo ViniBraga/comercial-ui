@@ -19,4 +19,9 @@ export class OpportunityService {
     return this.httpClient.post(this.apiUrl, opportunity)
   }
 
+  delete(id: number) {
+    let uri: String = "/delete/" + id;
+    return this.httpClient.get(this.apiUrl + uri);
+  }
+
 }

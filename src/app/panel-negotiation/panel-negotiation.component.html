@@ -34,6 +34,7 @@
       <th>Description</th>
       <th>Prospectus</th>
       <th>Value</th>
+      <th></th>
     </tr>
   </ng-template>
 
@@ -42,6 +43,7 @@
       <td>{{ opportunity.description }}</td>
       <td>{{ opportunity.prospectusName }}</td>
       <td>{{ opportunity.value }}</td>
+      <td><p-button label="Delete" styleClass="ui-button-danger" (onClick)="deleteButton(opportunity.id)"></p-button></td>
     </tr>
   </ng-template>
 

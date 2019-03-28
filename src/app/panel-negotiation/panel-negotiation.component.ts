@@ -35,11 +35,34 @@ export class PanelNegotiationComponent implements OnInit {
         summary: 'Opportunity successfully added'
       });
     }, 
-    resposta => {
+    response => {
       let msg = 'Unexpected error. Try again';
 
-      if(resposta.error.message) {
-        msg = resposta.error.message;
+      if(response.error.message) {
+        msg = response.error.message;
+      }
+
+      this.messageService.add({
+        severity: 'error',
+        summary: msg
+      });
+    });
+  }
+
+  deleteButton(id: number) {
+    console.info(id);
+    this.opportunityService.delete(id).subscribe(() => {
+      this.fetch();
+
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Opportunity successfully deleted'
+      });
+    },
+    response => {
+      let msg = 'Unexpected error. Try again';
+      if(response.error.message) {
+        msg = response.error.message;
       }
 
       this.messageService.add({
