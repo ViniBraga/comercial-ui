@@ -2,7 +2,7 @@
 
 Project of data register and consumption in order to utilize and try the [PrimeNG](https://www.primefaces.org/primeng) components 
 
-Hosted for testing at: <firebase link>
+Hosted for testing at: `https://commercial-ui-1f053.firebaseapp.com/`
 
 Consumes methods of [commercial-api](https://github.com/ViniBraga/commercial-api) available at `https://commercial-api.herokuapp.com/opportunities`
 
